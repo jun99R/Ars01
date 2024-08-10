@@ -552,126 +552,89 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /**********Sujet ****/
-
-.services {
-  padding-bottom: clamp(120px, 3.918rem + 17.91vw, 240px);
+/* Styles de base pour la section "sujet" */
+.sujet {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
-.services__top {
-  text-align: center;
-}
-
-.services__text {
+/* Conteneur principal */
+.sujet .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 48px;
 }
 
-.services__title,
-.services__card-title,
-.services__card-text,
-.section-subtitle,
-.accordion-content {
-  font-size: 18px; /* Taille de police uniforme */
+/* Style pour le texte */
+.sujet .text {
+  flex: 1 1 500px;
+  max-width: 600px;
 }
 
-.services__title {
+.sujet .text h2 {
   margin-bottom: 24px;
+  font-size: clamp(38px, 2.256rem + 0.6vw, 42px); /* Taille adaptative pour le titre */
   font-weight: 700;
   line-height: 140%;
   color: #0779e4;
 }
 
-.section-subtitle {
-  font-weight: bold;
-  color: #0779e4;
+.sujet .text p {
+  margin-bottom: 15px;
+  color: #333;
+  /* Pas de font-size fixe pour les paragraphes */
+}
+
+/* Style pour l'image */
+.sujet .image {
+  flex: 1 1 300px;
+  max-width: 1100px; 
   text-align: center;
-  margin-bottom: 24px;
 }
 
-.services__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 48px;
-}
-
-.services__card {
+.sujet .image img {
   width: 100%;
-  max-width: 402px;
-  padding: 220px 48px 48px;
-  display: grid;
-  gap: 12px;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: top 48px center;
+  height: auto;
+  max-width: 1000px;
+  border-radius: 10px;
 }
 
-.services__card-title {
-  font-weight: 600;
-  color: var(--title-color);
-}
-
-.services__card-text {
-  color: var(--text-color);
-}
-
-.services__card-read:hover {
-  color: var(--ui-accent-surface-hover);
-}
-
-.services__card-read:active {
-  color: var(--ui-accent-surface-pressed);
-}
-
-.services__card-1 {
-  background-image: url("../images/Ser2.svg");
-}
-
-.services__card-2 {
-  background-image: url("../images/Ser3.svg");
-}
-
-.services__card-3 {
-  background-image: url("../images/ser4.svg");
-}
-
-.services__card-4 {
-  background-image: url("../images/ser5.svg");
-}
-
-.services__card-5 {
-  background-image: url("../images/Pharma.svg");
-}
-
-.services__card-6 {
-  background-image: url("../images/Faci.svg");
-}
-
-.services__card-1,
-.services__card-2,
-.services__card-3,
-.services__card-4,
-.services__card-5,
-.services__card-6 {
-  background-size: 150px 150px;
-  background-repeat: no-repeat;
-  background-position: top 48px center;
-}
-
-@media (max-width: 1200px) {
-  .services__cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-}
-
+/* Ajustements pour les petits écrans */
 @media (max-width: 768px) {
-  .services__cards {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 24px;
+  .sujet .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sujet .text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .sujet .image {
+    max-width: 100%;
+  }
+
+  .sujet .image img {
+    max-width: 900px;
   }
 }
+
+/* Ajustements pour les très petits écrans */
+@media (max-width: 480px) {
+  .sujet {
+    padding: 20px 10px;
+  }
+
+  .sujet .text h2 {
+    font-size: clamp(30px, 1.5rem + 0.5vw, 36px); /* Ajustement pour très petits écrans */
+  }
+}
+
 /*****End*****/
 
 
