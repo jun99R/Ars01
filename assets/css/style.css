@@ -581,7 +581,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0779e4;
 }
 
-.section-subtitle {
+.text {
   font-weight: bold;
   color: #0779e4;
   text-align: center;
@@ -627,32 +627,8 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../images/Ser2.svg");
 }
 
-.services__card-2 {
-  background-image: url("../images/Ser3.svg");
-}
-
-.services__card-3 {
-  background-image: url("../images/ser4.svg");
-}
-
-.services__card-4 {
-  background-image: url("../images/ser5.svg");
-}
-
-.services__card-5 {
-  background-image: url("../images/Pharma.svg");
-}
-
-.services__card-6 {
-  background-image: url("../images/Faci.svg");
-}
-
 .services__card-1,
-.services__card-2,
-.services__card-3,
-.services__card-4,
-.services__card-5,
-.services__card-6 {
+.services__card-2 {
   background-size: 150px 150px;
   background-repeat: no-repeat;
   background-position: top 48px center;
